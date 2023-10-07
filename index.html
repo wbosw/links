@@ -1,19 +1,24 @@
 My link in bio
 
 <html>
-  <head>
-    <style> body{
+
+<head>
+  <style>
+    body {
       padding-top: 40px;
       padding-bottom: 40px;
+      background-color: #004643;
+      display: flex;
+      justify-content: center;
     }
-    
-    .banner-image{
+
+    .banner-image {
       width: 128px;
       height: 128px;
       border-radius: 100%;
     }
-    
-    .thumbnail{
+
+    .thumbnail {
       width: 48px;
       height: 48px;
       border-radius: 48px;
@@ -22,10 +27,14 @@ My link in bio
 
     body {
       background-color: #004643;
+      display: flex;
+      justify-content: center;
     }
 
     .name {
       color: #fffffe;
+      display: flex;
+      justify-content: center;
     }
 
     .social-icons a {
@@ -35,72 +44,96 @@ My link in bio
 
     .link {
       background-color: #6cb431;
+      display: flex;
+      align-items: center;
     }
 
     .link a {
       color: #001e1d;
       text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
     }
-    
-    .this {
+
+    .items {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+
     }
-    
-    </style>
+
+    .name {
+      color: #fffffe;
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+  </style>
 
 
-  </head>
+</head>
 
 
-  <body>
-    <div class="this">
-      <div class="banner">
-        <img src="/thumbnails/Profile-pic.jpg" alt="This is me, Billy"  class="banner-image">
-      </div>
-
-      <div class="name">
-        Bill Boswell
-      </div>
-
-      <div class="social-icons">
-
-        <a href="https://www.linkedin.com/in/bill-boswell-2501b679/" target="_blank">
-          LinkedIn
-        </a>
-      </div>
+<body>
+  <div class="items">
+    <div class="banner">
+      <img src="/thumbnails/Profile-pic.jpg" alt="This is me, Billy" class="banner-image">
     </div>
 
+    <div class="name">
+      Bill Boswell
+    </div>
+
+    <div class="social-icons">
+
+      <a href="https://www.linkedin.com/in/bill-boswell-2501b679/" target="_blank">
+        LinkedIn
+      </a>
+    </div>
+  
+
+  
     <div class="link">
       <img
-        src="/thumbnails/WillisTower.jpg" alt="Willis Tower" class="thumbnail">
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Willis_Tower_From_Lake.jpg/608px-Willis_Tower_From_Lake.jpg?20190421181811"
+        alt="Willis Tower" class="thumbnail">
 
       <a target="_blank" href="https://www.willistower.com/">Willis Tower
       </a>
 
-      <!--why didnt this work https://en.wikipedia.org/wiki/Willis_Tower#/media/File:Willis_Tower_From_Lake.jpg as the src -->
-
     </div>
 
     <div class="link">
-      <img src="/thumbnails/WillisTower.jpg" alt="Plato the Philosopher" class="thumbnail">
+      <img src="https://www.athensguide.com/plato-academy/plato-socrates.jpg" alt="Plato the Philosopher"
+        class="thumbnail">
 
-      <a target="_blank"
-        href="http://platoacademy.org/">My grade school
+      <a target="_blank" href="http://platoacademy.org/">My grade school
       </a>
 
-<!-- why didnt this work https://en.wikipedia.org/wiki/Plato#/media/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg -->
+      <!-- why didnt this work https://en.wikipedia.org/wiki/Plato#/media/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg -->
 
     </div>
 
     <div class="link">
-      <img
-        src="/thumbnails/Yield Curve.png"; alt="Treasury Yield Curve"; class="thumbnail">
+      <img src="/thumbnails/Yield Curve.png" ; alt="Treasury Yield Curve" ; class="thumbnail">
 
       <a target="_blank" href="https://www.ustreasuryyieldcurve.com/">
-      Treasury Yield Curve      
+        Treasury Yield Curve
       </a>
     </div>
+  </div>
+</body>
 
-  </body>
 </html>
