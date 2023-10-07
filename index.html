@@ -6,46 +6,96 @@ My link in bio
       padding-top: 40px;
       padding-bottom: 40px;
     }
+    
+    .banner-image{
+      width: 128px;
+      height: 128px;
+      border-radius: 100%;
+    }
+    
+    .thumbnail{
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    body {
+      background-color: #004643;
+    }
+
+    .name {
+      color: #fffffe;
+    }
+
+    .social-icons a {
+      color: #fffffe;
+      text-decoration: none;
+    }
+
+    .link {
+      background-color: #6cb431;
+    }
+
+    .link a {
+      color: #001e1d;
+      text-decoration: none;
+    }
+    
+    .this {
+      display: flex;
+      flex-direction: row;
+    }
+    
     </style>
 
 
   </head>
+
+
   <body>
-    <div class="banner">
-      <img src="/thumbnails/Profile-pic.jpg" alt="This is me, Billy" width="200px" height="200px">
-    </div>
+    <div class="this">
+      <div class="banner">
+        <img src="/thumbnails/Profile-pic.jpg" alt="This is me, Billy"  class="banner-image">
+      </div>
 
-    <div class="name">
-      Bill Boswell
-    </div>
+      <div class="name">
+        Bill Boswell
+      </div>
 
-    <div class="social-icons">
+      <div class="social-icons">
 
-      <a href="https://www.linkedin.com/in/bill-boswell-2501b679/" target="_blank">
-        LinkedIn
-      </a>
-
+        <a href="https://www.linkedin.com/in/bill-boswell-2501b679/" target="_blank">
+          LinkedIn
+        </a>
+      </div>
     </div>
 
     <div class="link">
       <img
-        src="https://en.wikipedia.org/wiki/Willis_Tower#/media/File:Willis_Tower_From_Lake.jpg" alt="Willis Tower">
+        src="/thumbnails/WillisTower.jpg" alt="Willis Tower" class="thumbnail">
 
       <a target="_blank" href="https://www.willistower.com/">Willis Tower
       </a>
+
+      <!--why didnt this work https://en.wikipedia.org/wiki/Willis_Tower#/media/File:Willis_Tower_From_Lake.jpg as the src -->
+
     </div>
 
     <div class="link">
-      <img src="https://en.wikipedia.org/wiki/Plato#/media/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg" alt="Plato the Philosopher">
+      <img src="/thumbnails/WillisTower.jpg" alt="Plato the Philosopher" class="thumbnail">
 
       <a target="_blank"
         href="http://platoacademy.org/">My grade school
       </a>
+
+<!-- why didnt this work https://en.wikipedia.org/wiki/Plato#/media/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg -->
+
     </div>
 
     <div class="link">
       <img
-        src="/thumbnails/Yield Curve.png"; width="200px"; height="100px"; alt="Treasury Yield Curve";>
+        src="/thumbnails/Yield Curve.png"; alt="Treasury Yield Curve"; class="thumbnail">
 
       <a target="_blank" href="https://www.ustreasuryyieldcurve.com/">
       Treasury Yield Curve      
